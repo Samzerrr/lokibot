@@ -1,0 +1,16 @@
+{
+  "players": [
+    {
+      "id": "419888237469892618",
+      "username": "samzerrrr",
+      "alive": true
+    }
+  ],
+  "gameState": "waiting",
+  "currentTurn": 0,
+  "messageId": "1382293290845732937",
+  "channelId": "1368289126884839455",
+  "host": "419888237469892618",
+  "chamberCount": 6,
+  "bulletPosition": 5
+}

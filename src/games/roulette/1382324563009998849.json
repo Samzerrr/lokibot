@@ -1,0 +1,26 @@
+{
+  "players": [
+    {
+      "id": "419888237469892618",
+      "username": "samzerrrr",
+      "alive": false
+    },
+    {
+      "id": "787733698216591370",
+      "username": "_nocorazon_",
+      "alive": false
+    },
+    {
+      "id": "661001198136066068",
+      "username": "jowran",
+      "alive": true
+    }
+  ],
+  "gameState": "finished",
+  "currentTurn": 0,
+  "messageId": "1382324563009998849",
+  "channelId": "1276617012466024589",
+  "host": "419888237469892618",
+  "chamberCount": 6,
+  "bulletPosition": 5
+}
