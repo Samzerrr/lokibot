@@ -114,5 +114,621 @@
   {
     "mot": "Jovial",
     "definition": "Qui exprime la gaieté, la bonne humeur."
+  },
+  {
+    "mot": "Abnégation",
+    "definition": "Renoncement volontaire à son intérêt personnel, sacrifice de soi-même."
+  },
+  {
+    "mot": "Abracadabrantesque",
+    "definition": "Qui tient de l'extravagance, de l'invraisemblance la plus absurde."
+  },
+  {
+    "mot": "Abscons",
+    "definition": "Difficile à comprendre, obscur, incompréhensible."
+  },
+  {
+    "mot": "Acariâtre",
+    "definition": "D'humeur désagréable, revêche, qui cherche querelle pour des riens."
+  },
+  {
+    "mot": "Accointance",
+    "definition": "Relation, fréquentation habituelle avec quelqu'un."
+  },
+  {
+    "mot": "Acrimonie",
+    "definition": "Âpreté, aigreur dans le caractère, dans les propos."
+  },
+  {
+    "mot": "Admonester",
+    "definition": "Réprimander, faire des remontrances."
+  },
+  {
+    "mot": "Affidé",
+    "definition": "Personne en qui l'on a une entière confiance, complice."
+  },
+  {
+    "mot": "Alangui",
+    "definition": "Qui est dans un état de langueur, de mollesse."
+  },
+  {
+    "mot": "Amphigourique",
+    "definition": "Confus, obscur, inintelligible."
+  },
+  {
+    "mot": "Anachorète",
+    "definition": "Personne qui vit dans la solitude pour se consacrer à la prière."
+  },
+  {
+    "mot": "Anathème",
+    "definition": "Condamnation solennelle, malédiction."
+  },
+  {
+    "mot": "Antédiluvien",
+    "definition": "Qui est très ancien, qui date d'avant le déluge."
+  },
+  {
+    "mot": "Apocryphe",
+    "definition": "Dont l'authenticité n'est pas établie, suspect."
+  },
+  {
+    "mot": "Atermoiement",
+    "definition": "Action de différer, de remettre à plus tard."
+  },
+  {
+    "mot": "Atrabiliaire",
+    "definition": "D'humeur sombre, mélancolique, irascible."
+  },
+  {
+    "mot": "Balbutiement",
+    "definition": "Articulation imparfaite des mots, début hésitant."
+  },
+  {
+    "mot": "Blandices",
+    "definition": "Propos flatteurs, caressants, séduisants."
+  },
+  {
+    "mot": "Bréviaire",
+    "definition": "Livre contenant l'office que les ecclésiastiques doivent réciter chaque jour."
+  },
+  {
+    "mot": "Calamistré",
+    "definition": "Qui est frisé, bouclé avec recherche, apprêté."
+  },
+  {
+    "mot": "Capharnaüm",
+    "definition": "Lieu qui contient beaucoup d'objets en désordre."
+  },
+  {
+    "mot": "Chafouin",
+    "definition": "Qui a l'air sournois, rusé, hypocrite."
+  },
+  {
+    "mot": "Chimérique",
+    "definition": "Qui n'existe que dans l'imagination, irréalisable."
+  },
+  {
+    "mot": "Circonlocution",
+    "definition": "Manière détournée de s'exprimer, périphrase."
+  },
+  {
+    "mot": "Concupiscence",
+    "definition": "Désir ardent des biens terrestres, désir charnel."
+  },
+  {
+    "mot": "Contumélie",
+    "definition": "Parole outrageante, injure grave."
+  },
+  {
+    "mot": "Cuistre",
+    "definition": "Pédant, prétentieux et sans éducation."
+  },
+  {
+    "mot": "Dactylographier",
+    "definition": "Écrire à la machine à écrire."
+  },
+  {
+    "mot": "Débonnaire",
+    "definition": "D'une bonté poussée jusqu'à la faiblesse."
+  },
+  {
+    "mot": "Démiurge",
+    "definition": "Dans la philosophie platonicienne, divinité qui a créé le monde."
+  },
+  {
+    "mot": "Dithyrambique",
+    "definition": "Qui loue avec un enthousiasme excessif."
+  },
+  {
+    "mot": "Échalas",
+    "definition": "Pieu qui soutient la vigne ou certaines plantes grimpantes."
+  },
+  {
+    "mot": "Égrillard",
+    "definition": "Qui est d'une gaieté libre, légèrement grivois."
+  },
+  {
+    "mot": "Empyrée",
+    "definition": "La partie la plus élevée du ciel, séjour des divinités."
+  },
+  {
+    "mot": "Épigone",
+    "definition": "Disciple qui imite servilement son maître sans en avoir le talent."
+  },
+  {
+    "mot": "Équanimité",
+    "definition": "Égalité d'humeur, sérénité."
+  },
+  {
+    "mot": "Éristique",
+    "definition": "Art de la controverse, de la dispute."
+  },
+  {
+    "mot": "Eschatologie",
+    "definition": "Doctrine concernant les fins dernières de l'homme et du monde."
+  },
+  {
+    "mot": "Escogriffe",
+    "definition": "Homme grand, maigre et dégingandé."
+  },
+  {
+    "mot": "Fabuliste",
+    "definition": "Auteur de fables."
+  },
+  {
+    "mot": "Falot",
+    "definition": "Qui manque d'éclat, de relief, insignifiant."
+  },
+  {
+    "mot": "Faribole",
+    "definition": "Propos frivole, sans importance."
+  },
+  {
+    "mot": "Fatras",
+    "definition": "Amas confus de choses sans valeur."
+  },
+  {
+    "mot": "Filandreux",
+    "definition": "Qui contient des filaments, qui est long et confus."
+  },
+  {
+    "mot": "Flagorner",
+    "definition": "Flatter bassement et avec insistance."
+  },
+  {
+    "mot": "Flegmatique",
+    "definition": "Qui garde son calme, imperturbable."
+  },
+  {
+    "mot": "Foisonner",
+    "definition": "Se multiplier en abondance."
+  },
+  {
+    "mot": "Folliculaire",
+    "definition": "Journaliste sans talent, pamphlétaire."
+  },
+  {
+    "mot": "Fortuité",
+    "definition": "Caractère de ce qui est fortuit, dû au hasard."
+  },
+  {
+    "mot": "Frugal",
+    "definition": "Qui se contente d'une nourriture simple et peu abondante."
+  },
+  {
+    "mot": "Galéjade",
+    "definition": "Plaisanterie, histoire inventée pour amuser."
+  },
+  {
+    "mot": "Galimatias",
+    "definition": "Discours confus et inintelligible."
+  },
+  {
+    "mot": "Goujat",
+    "definition": "Homme grossier, sans éducation ni délicatesse."
+  },
+  {
+    "mot": "Grabataire",
+    "definition": "Qui est obligé de garder le lit par suite de maladie ou de vieillesse."
+  },
+  {
+    "mot": "Grandiloquence",
+    "definition": "Caractère d'un discours emphatique, pompeux."
+  },
+  {
+    "mot": "Halieutique",
+    "definition": "Qui concerne la pêche."
+  },
+  {
+    "mot": "Hébétude",
+    "definition": "État de celui qui est hébété, engourdi."
+  },
+  {
+    "mot": "Hérésiarque",
+    "definition": "Fondateur d'une hérésie."
+  },
+  {
+    "mot": "Hiémal",
+    "definition": "Qui concerne l'hiver."
+  },
+  {
+    "mot": "Homélie",
+    "definition": "Discours familier pour expliquer l'Évangile."
+  },
+  {
+    "mot": "Iconoclaste",
+    "definition": "Qui s'attaque aux traditions, aux idées reçues."
+  },
+  {
+    "mot": "Idiosyncrasie",
+    "definition": "Tempérament particulier d'un individu."
+  },
+  {
+    "mot": "Ignominie",
+    "definition": "Déshonneur extrême, infamie."
+  },
+  {
+    "mot": "Immarcescible",
+    "definition": "Qui ne peut se flétrir."
+  },
+  {
+    "mot": "Impéritie",
+    "definition": "Incapacité, incompétence."
+  },
+  {
+    "mot": "Impétrant",
+    "definition": "Personne qui a obtenu ce qu'elle demandait."
+  },
+  {
+    "mot": "Incommensurable",
+    "definition": "Qui ne peut être mesuré, immense."
+  },
+  {
+    "mot": "Ineffable",
+    "definition": "Qu'on ne peut exprimer par des paroles."
+  },
+  {
+    "mot": "Inique",
+    "definition": "Qui est contraire à l'équité, injuste."
+  },
+  {
+    "mot": "Jérémiade",
+    "definition": "Plainte répétée et fatigante."
+  },
+  {
+    "mot": "Jocrisse",
+    "definition": "Niais qui se laisse mener par tout le monde."
+  },
+  {
+    "mot": "Laconique",
+    "definition": "Qui s'exprime en peu de mots, concis."
+  },
+  {
+    "mot": "Lacustre",
+    "definition": "Qui vit dans ou près des lacs."
+  },
+  {
+    "mot": "Lénifiant",
+    "definition": "Qui calme, qui adoucit."
+  },
+  {
+    "mot": "Liminaire",
+    "definition": "Qui est placé au début, préliminaire."
+  },
+  {
+    "mot": "Loquace",
+    "definition": "Qui parle beaucoup, bavard."
+  },
+  {
+    "mot": "Machiavélique",
+    "definition": "Qui fait preuve de ruse, de duplicité dans sa conduite."
+  },
+  {
+    "mot": "Marasme",
+    "definition": "État de dépérissement, de stagnation."
+  },
+  {
+    "mot": "Mésestime",
+    "definition": "Mauvaise opinion qu'on a de quelqu'un."
+  },
+  {
+    "mot": "Mirifique",
+    "definition": "Qui suscite l'admiration, merveilleux."
+  },
+  {
+    "mot": "Misanthrope",
+    "definition": "Personne qui hait le genre humain, qui fuit la société."
+  },
+  {
+    "mot": "Mnémotechnique",
+    "definition": "Qui aide la mémoire."
+  },
+  {
+    "mot": "Morigéner",
+    "definition": "Réprimander, faire la leçon."
+  },
+  {
+    "mot": "Nébuleux",
+    "definition": "Qui manque de clarté, obscur, confus."
+  },
+  {
+    "mot": "Nyctalope",
+    "definition": "Qui voit mieux la nuit que le jour."
+  },
+  {
+    "mot": "Objurgation",
+    "definition": "Reproche violent, remontrance vive."
+  },
+  {
+    "mot": "Obséquieux",
+    "definition": "Qui pousse la politesse, la complaisance jusqu'à la servilité."
+  },
+  {
+    "mot": "Obsolète",
+    "definition": "Qui n'est plus utilisé, désuet, périmé."
+  },
+  {
+    "mot": "Occultation",
+    "definition": "Action de cacher, de dissimuler."
+  },
+  {
+    "mot": "Oléagineux",
+    "definition": "Qui contient de l'huile, qui est de la nature de l'huile."
+  },
+  {
+    "mot": "Omniscience",
+    "definition": "Connaissance de toutes choses."
+  },
+  {
+    "mot": "Onomatopée",
+    "definition": "Formation d'un mot par imitation du son qu'il évoque."
+  },
+  {
+    "mot": "Opprobre",
+    "definition": "Déshonneur extrême, ignominie."
+  },
+  {
+    "mot": "Ordurier",
+    "definition": "Qui est grossier, obscène."
+  },
+  {
+    "mot": "Ostensible",
+    "definition": "Qui est fait pour être vu, montré."
+  },
+  {
+    "mot": "Palimpseste",
+    "definition": "Manuscrit dont on a effacé la première écriture pour pouvoir écrire un nouveau texte."
+  },
+  {
+    "mot": "Palinodie",
+    "definition": "Rétractation de ce qu'on a dit ou écrit."
+  },
+  {
+    "mot": "Panacée",
+    "definition": "Remède universel, solution à tous les problèmes."
+  },
+  {
+    "mot": "Panégyrique",
+    "definition": "Discours à la louange de quelqu'un."
+  },
+  {
+    "mot": "Parangon",
+    "definition": "Modèle, exemple parfait."
+  },
+  {
+    "mot": "Péremptoirement",
+    "definition": "D'une manière péremptoire, sans réplique possible."
+  },
+  {
+    "mot": "Péripatéticien",
+    "definition": "Disciple d'Aristote, qui enseignait en marchant."
+  },
+  {
+    "mot": "Péronnelle",
+    "definition": "Jeune femme sotte et bavarde."
+  },
+  {
+    "mot": "Pétulant",
+    "definition": "Qui a une vivacité impétueuse."
+  },
+  {
+    "mot": "Philatélie",
+    "definition": "Collection et étude des timbres-poste."
+  },
+  {
+    "mot": "Pindariser",
+    "definition": "Parler avec affectation, de manière emphatique."
+  },
+  {
+    "mot": "Pleutre",
+    "definition": "Homme sans courage, lâche."
+  },
+  {
+    "mot": "Plumitif",
+    "definition": "Écrivain, journaliste sans talent."
+  },
+  {
+    "mot": "Postiche",
+    "definition": "Qui est ajouté après coup, artificiel."
+  },
+  {
+    "mot": "Prévarication",
+    "definition": "Manquement à ses devoirs, trahison de confiance."
+  },
+  {
+    "mot": "Procrastination",
+    "definition": "Tendance à tout remettre au lendemain."
+  },
+  {
+    "mot": "Prolixe",
+    "definition": "Qui s'exprime longuement, verbeux."
+  },
+  {
+    "mot": "Pusillanime",
+    "definition": "Qui manque de courage, de résolution."
+  },
+  {
+    "mot": "Quérulence",
+    "definition": "Tendance pathologique à se plaindre constamment."
+  },
+  {
+    "mot": "Quintessence",
+    "definition": "Ce qu'il y a de plus raffiné, de plus subtil."
+  },
+  {
+    "mot": "Ratiociner",
+    "definition": "Raisonner avec subtilité, de façon compliquée."
+  },
+  {
+    "mot": "Réfractaire",
+    "definition": "Qui résiste, qui n'obéit pas."
+  },
+  {
+    "mot": "Rémanent",
+    "definition": "Qui persiste, qui subsiste."
+  },
+  {
+    "mot": "Rétrograde",
+    "definition": "Qui va en arrière, opposé au progrès."
+  },
+  {
+    "mot": "Rubicond",
+    "definition": "Qui est rouge, coloré (en parlant du visage)."
+  },
+  {
+    "mot": "Sagace",
+    "definition": "Qui a une grande pénétration d'esprit."
+  },
+  {
+    "mot": "Sanhédrin",
+    "definition": "Assemblée de notables, conseil suprême."
+  },
+  {
+    "mot": "Sémillant",
+    "definition": "Vif, enjoué, pétillant."
+  },
+  {
+    "mot": "Sérendipité",
+    "definition": "Fait de découvrir quelque chose par hasard alors qu'on cherchait autre chose."
+  },
+  {
+    "mot": "Soliloque",
+    "definition": "Discours d'une personne qui se parle à elle-même."
+  },
+  {
+    "mot": "Sophisme",
+    "definition": "Raisonnement faux malgré une apparence de vérité."
+  },
+  {
+    "mot": "Spécieux",
+    "definition": "Qui a une apparence de vérité, mais qui est trompeur."
+  },
+  {
+    "mot": "Stochastique",
+    "definition": "Qui relève du hasard, aléatoire."
+  },
+  {
+    "mot": "Subséquent",
+    "definition": "Qui vient après, qui suit."
+  },
+  {
+    "mot": "Superfétatoire",
+    "definition": "Qui s'ajoute inutilement à ce qui est suffisant."
+  },
+  {
+    "mot": "Syllogisme",
+    "definition": "Raisonnement logique à trois propositions."
+  },
+  {
+    "mot": "Taciturne",
+    "definition": "Qui parle peu, silencieux par tempérament."
+  },
+  {
+    "mot": "Tautologie",
+    "definition": "Répétition inutile d'une même idée en termes différents."
+  },
+  {
+    "mot": "Ténébreux",
+    "definition": "Sombre, obscur, mystérieux."
+  },
+  {
+    "mot": "Thuriféraire",
+    "definition": "Admirateur excessif, flatteur servile."
+  },
+  {
+    "mot": "Truchement",
+    "definition": "Personne qui sert d'intermédiaire, d'interprète."
+  },
+  {
+    "mot": "Turpitude",
+    "definition": "Action honteuse, infâme."
+  },
+  {
+    "mot": "Ubiquité",
+    "definition": "Faculté d'être présent partout à la fois."
+  },
+  {
+    "mot": "Ululer",
+    "definition": "Pousser des cris comme la chouette ou le hibou."
+  },
+  {
+    "mot": "Vaticiner",
+    "definition": "Prophétiser, prédire l'avenir."
+  },
+  {
+    "mot": "Velléité",
+    "definition": "Volonté faible et sans effet."
+  },
+  {
+    "mot": "Véniel",
+    "definition": "Qui est pardonnable, peu grave."
+  },
+  {
+    "mot": "Verbeux",
+    "definition": "Qui abonde en paroles inutiles."
+  },
+  {
+    "mot": "Vergogne",
+    "definition": "Honte, pudeur."
+  },
+  {
+    "mot": "Vernaculaire",
+    "definition": "Propre à un pays, à une région."
+  },
+  {
+    "mot": "Vespéral",
+    "definition": "Qui a lieu le soir."
+  },
+  {
+    "mot": "Vicissitude",
+    "definition": "Changement de choses qui se succèdent."
+  },
+  {
+    "mot": "Vilipender",
+    "definition": "Traiter avec mépris, dénigrer."
+  },
+  {
+    "mot": "Virulent",
+    "definition": "D'une grande violence, très agressif."
+  },
+  {
+    "mot": "Volubile",
+    "definition": "Qui parle avec abondance et facilité."
+  },
+  {
+    "mot": "Vulnérable",
+    "definition": "Qui peut être blessé, attaqué, fragilisé."
+  },
+  {
+    "mot": "Xylophage",
+    "definition": "Qui se nourrit de bois."
+  },
+  {
+    "mot": "Zinzolin",
+    "definition": "Couleur d'un violet rougeâtre."
+  },
+  {
+    "mot": "Zoïle",
+    "definition": "Critique envieux et malveillant."
   }
 ] 
