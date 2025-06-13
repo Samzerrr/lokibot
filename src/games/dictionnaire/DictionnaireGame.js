@@ -124,6 +124,7 @@ class DictionnaireGame {
     handleVote(interaction, isTrue) {
         const channelId = interaction.channelId;
         const userId = interaction.user.id;
+        const username = interaction.user.username;
         const game = this.games.get(channelId);
         
         if (!game) {
@@ -137,11 +138,15 @@ class DictionnaireGame {
             return;
         }
         
-        // Enregistre le vote
+        // Enregistre le vote avec le nom d'utilisateur
         if (isTrue) {
             game.votes.true.push(userId);
+            if (!game.voterNames) game.voterNames = {};
+            game.voterNames[userId] = username;
         } else {
             game.votes.false.push(userId);
+            if (!game.voterNames) game.voterNames = {};
+            game.voterNames[userId] = username;
         }
         
         interaction.reply({ content: `Votre vote a été enregistré!`, ephemeral: true });
@@ -166,6 +171,30 @@ class DictionnaireGame {
         const truePercentage = totalVotes > 0 ? Math.round((trueVotes / totalVotes) * 100) : 0;
         const falsePercentage = totalVotes > 0 ? Math.round((falseVotes / totalVotes) * 100) : 0;
         
+        // Prépare les listes de noms des votants
+        let trueVotersList = '';
+        let falseVotersList = '';
+        
+        if (game.voterNames) {
+            // Liste des votants "Vraie"
+            if (game.votes.true.length > 0) {
+                trueVotersList = game.votes.true
+                    .map(userId => game.voterNames[userId])
+                    .join(', ');
+            } else {
+                trueVotersList = 'Aucun';
+            }
+            
+            // Liste des votants "Fausse"
+            if (game.votes.false.length > 0) {
+                falseVotersList = game.votes.false
+                    .map(userId => game.voterNames[userId])
+                    .join(', ');
+            } else {
+                falseVotersList = 'Aucun';
+            }
+        }
+        
         // Crée un embed pour afficher les résultats
         const embed = new EmbedBuilder()
             .setTitle(`🔍 Résultats - Jeu du Dictionnaire`)
@@ -174,7 +203,9 @@ class DictionnaireGame {
             .addFields(
                 { name: 'Résultat', value: game.isRealDefinition ? '✅ La définition était **VRAIE**!' : '❌ La définition était **FAUSSE**!' },
                 { name: 'Vraie définition', value: game.realDefinition },
-                { name: 'Votes', value: `✅ Vraie: ${trueVotes} (${truePercentage}%)\n❌ Fausse: ${falseVotes} (${falsePercentage}%)` }
+                { name: 'Votes', value: `✅ Vraie: ${trueVotes} (${truePercentage}%)\n❌ Fausse: ${falseVotes} (${falsePercentage}%)` },
+                { name: 'Votants "Vraie"', value: trueVotersList },
+                { name: 'Votants "Fausse"', value: falseVotersList }
             )
             .setFooter({ text: `Total des votes: ${totalVotes}` });
         

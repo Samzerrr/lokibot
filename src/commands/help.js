@@ -37,6 +37,12 @@ module.exports = {
                  'Le dernier joueur en vie remporte la partie!'
         },
         {
+          name: '📖 Dictionnaire',
+          value: '`/dictionnaire` - Lance un jeu du dictionnaire avec des mots rares\n' +
+                 'Devinez si la définition proposée est vraie ou fausse.\n' +
+                 'Votez avec les boutons et découvrez qui a raison!'
+        },
+        {
           name: '📊 Classement',
           value: '`/leaderboard global` - Afficher le classement global\n' +
                  '`/leaderboard points` - Afficher le classement par points\n' +
