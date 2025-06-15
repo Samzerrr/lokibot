@@ -2,6 +2,7 @@ require('dotenv').config();
 const { Client, GatewayIntentBits, Collection, ActivityType } = require('discord.js');
 const fs = require('fs');
 const statusManager = require('./utils/statusManager');
+const messageFilter = require('./utils/messageFilter');
 
 const client = new Client({
   intents: [
@@ -202,6 +203,10 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.on('messageCreate', async message => {
+  // Utiliser notre gestionnaire de filtrage
+  const isFiltered = await messageFilter.processMessage(message);
+  if (isFiltered) return; // Si le message a été filtré, ne pas continuer le traitement
+
   if (message.author.bot) return;
   if (!message.content.startsWith(PREFIX)) return;
 
