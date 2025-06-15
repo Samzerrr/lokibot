@@ -3,6 +3,7 @@ const { Client, GatewayIntentBits, Collection, ActivityType } = require('discord
 const fs = require('fs');
 const statusManager = require('./utils/statusManager');
 const messageFilter = require('./utils/messageFilter');
+const nicknameFilter = require('./utils/nicknameFilter');
 
 const client = new Client({
   intents: [
@@ -53,6 +54,18 @@ client.once('ready', () => {
   
   // Restaurer le statut sauvegardé au démarrage du bot
   statusManager.applyStatus(client);
+  
+  // Vérifier les pseudos de tous les membres dans toutes les guildes
+  client.guilds.cache.forEach(async (guild) => {
+    try {
+      const modifiedCount = await nicknameFilter.checkAllMembers(guild);
+      if (modifiedCount > 0) {
+        console.log(`${modifiedCount} pseudos ont été modifiés dans la guilde "${guild.name}"`);
+      }
+    } catch (error) {
+      console.error(`Erreur lors de la vérification des pseudos dans la guilde "${guild.name}":`, error);
+    }
+  });
 });
 
 client.on('interactionCreate', async interaction => {
@@ -240,6 +253,28 @@ client.on('messageCreate', async message => {
   } catch (error) {
     console.error(error);
     await message.reply('Erreur lors de l\'exécution de la commande.');
+  }
+});
+
+// Ajouter un gestionnaire pour l'événement guildMemberAdd
+client.on('guildMemberAdd', async (member) => {
+  try {
+    // Vérifier et modifier le pseudo si nécessaire
+    await nicknameFilter.processMember(member);
+  } catch (error) {
+    console.error('Erreur lors du traitement du nouveau membre:', error);
+  }
+});
+
+// Ajouter un gestionnaire pour l'événement guildMemberUpdate
+client.on('guildMemberUpdate', async (oldMember, newMember) => {
+  try {
+    // Si le pseudo a été modifié, vérifier le nouveau pseudo
+    if (oldMember.nickname !== newMember.nickname) {
+      await nicknameFilter.processMember(newMember);
+    }
+  } catch (error) {
+    console.error('Erreur lors du traitement de la mise à jour du membre:', error);
   }
 });
 

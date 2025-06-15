@@ -2,6 +2,7 @@ const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
 const filterConfig = require('../utils/filterConfig');
+const nicknameFilter = require('../utils/nicknameFilter');
 
 // Chemin vers le fichier de configuration
 const configFilePath = path.join(__dirname, '../utils/filterConfig.js');
@@ -72,7 +73,27 @@ module.exports = {
         .addBooleanOption(option =>
           option.setName('activer')
             .setDescription('Activer ou désactiver les notifications')
-            .setRequired(true))),
+            .setRequired(true)))
+    .addSubcommand(subcommand =>
+      subcommand
+        .setName('nickname')
+        .setDescription('Activer/désactiver le renommage des pseudos')
+        .addBooleanOption(option =>
+          option.setName('activer')
+            .setDescription('Activer ou désactiver le renommage des pseudos')
+            .setRequired(true)))
+    .addSubcommand(subcommand =>
+      subcommand
+        .setName('replacement')
+        .setDescription('Définir le pseudo de remplacement')
+        .addStringOption(option =>
+          option.setName('pseudo')
+            .setDescription('Le pseudo à utiliser pour remplacer les pseudos interdits')
+            .setRequired(true)))
+    .addSubcommand(subcommand =>
+      subcommand
+        .setName('scan')
+        .setDescription('Scanner tous les membres pour des pseudos interdits')),
             
   async execute(interaction, client) {
     const subcommand = interaction.options.getSubcommand();
@@ -83,8 +104,12 @@ module.exports = {
         if (filterConfig.filteredWords.length === 0) {
           await interaction.reply({ content: 'Aucun mot n\'est actuellement filtré.', ephemeral: true });
         } else {
+          const nicknameStatus = filterConfig.nicknames && filterConfig.nicknames.enabled ? 
+            `Activé (remplacement: "${filterConfig.nicknames.replacement}")` : 
+            'Désactivé';
+            
           await interaction.reply({ 
-            content: `**Mots actuellement filtrés:**\n${filterConfig.filteredWords.join(', ')}\n\n**Notifications:** ${filterConfig.notifyUser ? 'Activées' : 'Désactivées'}`, 
+            content: `**Mots actuellement filtrés:**\n${filterConfig.filteredWords.join(', ')}\n\n**Notifications:** ${filterConfig.notifyUser ? 'Activées' : 'Désactivées'}\n\n**Renommage des pseudos:** ${nicknameStatus}`, 
             ephemeral: true 
           });
         }
@@ -127,6 +152,62 @@ module.exports = {
         await saveConfig(updatedConfig);
         await interaction.reply({ 
           content: `Les notifications aux utilisateurs ont été ${enable ? 'activées' : 'désactivées'}.`, 
+          ephemeral: true 
+        });
+      }
+      else if (subcommand === 'nickname') {
+        // Activer/désactiver le renommage des pseudos
+        const enable = interaction.options.getBoolean('activer');
+        
+        const updatedConfig = { ...filterConfig };
+        if (!updatedConfig.nicknames) {
+          updatedConfig.nicknames = {
+            enabled: enable,
+            replacement: 'ANTIQUE ON TOP',
+            notifyUser: false,
+            notificationMessage: 'Votre pseudo a été modifié car il contenait un mot interdit.'
+          };
+        } else {
+          updatedConfig.nicknames.enabled = enable;
+        }
+        
+        await saveConfig(updatedConfig);
+        await interaction.reply({ 
+          content: `Le renommage automatique des pseudos a été ${enable ? 'activé' : 'désactivé'}.`, 
+          ephemeral: true 
+        });
+      }
+      else if (subcommand === 'replacement') {
+        // Définir le pseudo de remplacement
+        const replacement = interaction.options.getString('pseudo');
+        
+        const updatedConfig = { ...filterConfig };
+        if (!updatedConfig.nicknames) {
+          updatedConfig.nicknames = {
+            enabled: true,
+            replacement: replacement,
+            notifyUser: false,
+            notificationMessage: 'Votre pseudo a été modifié car il contenait un mot interdit.'
+          };
+        } else {
+          updatedConfig.nicknames.replacement = replacement;
+        }
+        
+        await saveConfig(updatedConfig);
+        await interaction.reply({ 
+          content: `Le pseudo de remplacement a été défini sur "${replacement}".`, 
+          ephemeral: true 
+        });
+      }
+      else if (subcommand === 'scan') {
+        // Scanner tous les membres pour des pseudos interdits
+        await interaction.deferReply({ ephemeral: true });
+        
+        const guild = interaction.guild;
+        const modifiedCount = await nicknameFilter.checkAllMembers(guild);
+        
+        await interaction.editReply({ 
+          content: `Scan terminé. ${modifiedCount} pseudos ont été modifiés.`, 
           ephemeral: true 
         });
       }
